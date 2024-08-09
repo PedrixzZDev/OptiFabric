@@ -223,7 +223,7 @@ public class OptifabricSetup implements Runnable {
 		if (isPresent("fabric-screen-api-v1")) {
 			if (isPresent("fabric-screen-api-v1", ">=2.0.16")) {
 				//0.92.1 moved to use Mixin Extra so no longer an issue
-			} else if (isPresent("minecraft", ">=1.20.2")) {
+			} else if (isPresent("minecraft", ">=1.21")) {
 				Mixins.addConfiguration("optifabric.compat.fabric-screen-api.new5er-mixins.json");
 			} else if (isPresent("minecraft", ">=1.20")) {
 				Mixins.addConfiguration("optifabric.compat.fabric-screen-api.new4er-mixins.json");
